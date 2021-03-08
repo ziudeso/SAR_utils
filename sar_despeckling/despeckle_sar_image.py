@@ -8,7 +8,7 @@ from model import custom_loss
 
 import os
 path = "D:/sar/test3/"
-model_cnn = load_model("C:/Users/tim.iles/noise_model_noise_synthetic_sv_loss.h5",
+model_cnn = load_model("./trained_models/noise_model_noise_synthetic_sv_loss.h5",
                        custom_objects={"total_variation_loss": custom_loss})
 
 if path.endswith("test3/"):
